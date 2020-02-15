@@ -1,0 +1,17 @@
+{
+  "name": "thumbnail",
+  "version": "1.0.0",
+  "description": "Minio Webhook function for resizing images",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["openfaas", "minio", "thumbnail"],
+  "author": "John Tarlton",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jimp": "^0.9.3",
+    "minio": "^7.0.13"
+  }
+}

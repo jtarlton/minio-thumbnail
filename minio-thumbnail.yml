@@ -1,0 +1,23 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://127.0.0.1:8080
+functions:
+  thumbnail:
+    lang: node12-express-armhf
+    handler: ./minio-thumbnail
+    image: jtarlton/minio-thumbnail:0.1
+    environment:
+      read_timeout:  60s       
+      write_timeout: 60s        
+      upstream_timeout: 60s     
+      exec_timeout: 60s     
+      ENDPOINT: "minio-service.minio.svc.cluster.local"
+      PORT: "9000"
+      USE_SSL: "false"
+      ACCESS_KEY: "minio"
+      SECRET_KEY: "<SECRET KEY>"     
+      #IMAGE_WIDTH="96"
+      #IMAGE_HEIGHT="96"
+      #IMAGE_QUALITY="100"
+      #IMAGE_SUFFIX="-thumbnail"
