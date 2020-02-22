@@ -73,4 +73,3 @@ mc ls local/thumbnail-images
 [Minio example] (https://github.com/minio/thumbnailer)
 [Jimp] (libary https://github.com/oliver-moran/jimp)
 
-
