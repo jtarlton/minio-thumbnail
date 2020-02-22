@@ -68,8 +68,11 @@ mc ls local/thumbnail-images
  
 ## References
 
-[OpenFaas] (https://github.com/openfaas/faas)
-[Minio notifications] (https://docs.min.io/docs/minio-bucket-notification-guide.html#webhooks)
-[Minio example] (https://github.com/minio/thumbnailer)
-[Jimp] (libary https://github.com/oliver-moran/jimp)
+OpenFaas https://github.com/openfaas/faas
+
+Minio notifications https://docs.min.io/docs/minio-bucket-notification-guide.html#webhooks
+
+Minio example https://github.com/minio/thumbnailer
+
+Jimp libary https://github.com/oliver-moran/jimp
 
