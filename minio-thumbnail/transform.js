@@ -1,9 +1,14 @@
 'use strict';
 
+/*
+ * Jimp - An image processing library for Node written entirely in JavaScript, 
+ * with zero native dependencies.
+ * https://github.com/oliver-moran/jimp
+ */ 
 const Jimp = require('jimp');
 
 /**
- * Resize + optimize an image.
+ * Resize an image.
  *
  * @param String imagePath - image file path.
  * @param Number width -  the width to resize the image to (0 for automatic)

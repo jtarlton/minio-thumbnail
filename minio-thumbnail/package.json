@@ -1,17 +1,27 @@
 {
-  "name": "thumbnail",
+  "name": "function",
   "version": "1.0.0",
-  "description": "Minio Webhook function for resizing images",
+  "description": "An OpenFaas function to demonstrate handling of Minio webhook notifications.",
   "main": "handler.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["openfaas", "minio", "thumbnail"],
+  "keywords": [
+    "minio",
+    "openfaas",
+    "thumbnail"
+  ],
   "author": "John Tarlton",
   "license": "MIT",
   "dependencies": {
     "express": "^4.17.1",
     "jimp": "^0.9.3",
-    "minio": "^7.0.13"
+    "minio": "^7.0.13",
+    "tmp-promise": "^2.0.2"
+  },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/jtarlton/minio-thumbnail",
+    "directory": "minio-thumbnail"
   }
 }
